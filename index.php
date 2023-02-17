@@ -45,9 +45,13 @@
 
             <p> <b> Lunghezza testo: </b> <?php echo $textLength; ?> caratteri </p>
 
-            <p> <b> Testo censurato: </b> <?php echo $censoredText; ?> </p>
+            <?php if(isset($_GET['word'])){ ?>
 
-            <p> <b> Lunghezza testo censurato: </b> <?php echo $censoredTextLength; ?> caratteri </p>
+                <p> <b> Testo censurato: </b> <?php echo $censoredText; ?> </p>
+
+                <p> <b> Lunghezza testo censurato: </b> <?php echo $censoredTextLength; ?> caratteri </p>
+
+            <?php } ?>
         
         </main>
         
